@@ -5,5 +5,6 @@ node (){
   sh 'cat README.md'
   stage "anothe checkout!"
   git url: "https://github.com/lastpass/lastpass-cli.git"
+  archive: "lpass.1.txt"
 }
 
