@@ -17,11 +17,13 @@ node (){
 parallel (
     "stream 1" : {
         node (){
+            stage "test1"
             echo "test1"
         }
     },
     "stream 2" : {
         node (){
+            stage "test2"
             echo "test2"
         }
     }
