@@ -6,5 +6,6 @@ node (){
   stage "anothe checkout!"
   git url: "https://github.com/lastpass/lastpass-cli.git"
   archive: "lpass.1.txt"
+  stash includes: 'lpass.1.txt', name: 'text-file'
 }
 
