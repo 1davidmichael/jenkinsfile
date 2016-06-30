@@ -19,7 +19,7 @@ parallel (
         node (){
             echo "test1"
         }
-    }
+    },
     "stream 2" : {
         node (){
             echo "test2"
