@@ -13,8 +13,14 @@ node (){
   unstash 'text-file'
   sh 'cat lpass.1.txt'
   parallel (
-    phase1: { sh "echo phase1" },
-    phase2: { sh "echo phase2" }
+    phase1: {
+        label "phase1"
+        sh "echo phase1"
+    },
+    phase2: {
+        label "phase2"
+        sh "echo phase2"
+    }
   )
 }
 
