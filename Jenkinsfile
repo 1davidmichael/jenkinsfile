@@ -14,11 +14,9 @@ node (){
   sh 'cat lpass.1.txt'
   parallel (
     phase1: {
-        label "phase1"
         sh "echo phase1"
     },
     phase2: {
-        label "phase2"
         sh "echo phase2"
     }
   )
