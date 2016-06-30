@@ -9,6 +9,9 @@ node (){
   stash includes: 'lpass.1.txt', name: 'text-file'
   stage "clear everything"
   sh 'rm -rf ${WORKSPACE}'
+  stage "unstash and cat file"
+  unstash 'text-file'
+  sh 'cat lpass.1.txt'
 
 }
 
