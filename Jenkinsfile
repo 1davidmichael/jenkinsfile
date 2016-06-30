@@ -12,6 +12,13 @@ node (){
   stage "unstash and cat file"
   unstash 'text-file'
   sh 'cat lpass.1.txt'
-
+  parallel (
+    "stream 1" : {
+        echo "test1"
+    }
+    "stream 2" : {
+        echo "test2"
+    }
+  )
 }
 
